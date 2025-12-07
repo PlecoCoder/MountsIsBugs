@@ -10,7 +10,7 @@ public class PlayerEntityMixin {
 
     @Redirect(method = "getBlockBreakingSpeed", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/PlayerEntity;isOnGround()Z"))
     boolean mountsIsBugs$getBlockBreakingSpeed(PlayerEntity instance) {
-        if (instance.hasVehicle()) return false;
+        if (instance.hasVehicle()) return true;
         return instance.isOnGround();
     }
 

@@ -17,8 +17,5 @@
   "mixins": [
     "mountsisbugs.mixins.json"
   ],
-  "depends": {
-    "fabricloader": ">=${loader_version}",
-    "minecraft": "${minecraft_version}"
-  }
+  "depends": {}
 }
