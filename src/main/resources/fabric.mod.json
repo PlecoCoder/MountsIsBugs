@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "mountsisbugs",
+  "version": "1.0.0",
+  "name": "MountsIsBugs",
+  "description": "Removes the mid-air mining speed debuff while mounted",
+  "authors": [],
+  "contact": {},
+  "license": "unlicense",
+  "icon": "assets/mountsisbugs/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "mod.omoflop.mountsisbugs.MountsIsBugs"
+    ]
+  },
+  "mixins": [
+    "mountsisbugs.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
